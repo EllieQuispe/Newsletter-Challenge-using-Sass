@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="https://kit.fontawesome.com/8fb755cfee.js" crossorigin="anonymous"></script>
+    
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
+    
+        <title>Newsletter Sign-up Form</title>
+        <link rel="stylesheet" href="/images/styles/main.css">
+        <script src="index.js" defer></script>
+    </head>
+   
+
+    <body>
+        <div class="newsletterContainer">
+                <div class="innerContainer">
+                    <p class="title">Stay updated!</p>
+                    <p class="desktopDescription">Join 60,000+ product managers receiving monthly updates on: </p>
+                    <ul class="list">
+                        <li><i class="fa-solid fa-circle-check"></i>Product discovery and building what matters</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Measuring to ensure updates are a success</li>
+                        <li><i class="fa-solid fa-circle-check"></i> And much more!</li>
+                    </ul>
+                
+                    <form id="newsletterForm">
+                        <label for="email" id="emails">Email address <span class="errorMessage"></span></label>
+                        <input type="text" id="email" name="email" placeholder="email@company.com" class=" defaultColor" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required><br>
+                        <input type="submit" class="formBtn" value="Subscribe to monthly newsletter">
+                    </form>
+                </div>
+                
+            
+            <div class="imgContainer">
+                <img class="formImage" src="/images/illustration-sign-up-desktop.svg">
+                <img class="formImageMobile" src="/images/illustration-sign-up-mobile.svg"> 
+            </div>
+        </div>
+
+
+
+
+        <div class="successMessageContainer">
+                <div class="successMessageText">
+                    <div class="checkIcon">
+                        <img class="successIcon" src="/images/icon-success.svg">
+                    </div>
+                    <p class="title">Thanks for subscribing!</p>
+                    <p class="description">A confirmation email has been sent to <span class="userEmail"></span>. Please open
+                    it and click the button inside to confirm your subscription.</p>
+                    <button class="successBtn">Dismiss message</button>
+                </div>
+        </div>
+
+
+    </body>
+</html>
+
+
